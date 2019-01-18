@@ -1,7 +1,7 @@
 def main():
     # problem0()
     # problem1()
-    # problem2()
+    # problem3()
     # problem4()
     problem5()
 
@@ -27,7 +27,7 @@ Inside the loop print LOOP
 '''
 
 
-def problem2():
+def problem3():
     user_input = input("gimme a word, sentence, anything!")
 
     for loop in user_input:
@@ -67,7 +67,27 @@ Else, print ERROR.
 '''
 
 def problem5():
-    userInput = input("gimme a number between 1-3")
+    def print1():
+        print("IN FUNCTION 1.")
+    def print2():
+        print("IN FUNCTION 2.")
+    def print3():
+        print("IN FUNCTION 3.")
+
+
+    while(True):
+        userInput = input("gimme a number between 1-3")
+        if userInput == "1":
+            print1()
+        elif userInput == "2":
+            print2()
+        elif userInput == "3":
+            print3()
+        elif userInput == "q":
+            break
+        else:
+            print("ERROR")
+
 
 if __name__=='__main__':
     main()
